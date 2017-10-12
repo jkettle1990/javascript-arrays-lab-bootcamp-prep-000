@@ -16,3 +16,8 @@ var destructivelyRemoveLastKitten = function(){
 var destructivelyRemoveFirstKitten = function(){
   kittens.shift()
 }
+
+var appendKitten = function(name){
+  [name, ...kittens]
+  return kittens
+}
